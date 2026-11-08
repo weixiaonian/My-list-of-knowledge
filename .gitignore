@@ -24,4 +24,6 @@ mono_crash.*.json
 # Uncomment if your project does not version PCK files as runtime dependencies.
 # *.pck
 
-*.DS_Store
+# macOS 系统文件（Finder 自动生成，不应提交）
+.DS_Store
+**/.DS_Store

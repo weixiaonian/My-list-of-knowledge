@@ -1,24 +1,6 @@
 [gd_scene format=3 uid="uid://cj3x04dkgpcdt"]
 
-[ext_resource type="Shader" uid="uid://dhyx14r4u0xk8" path="res://shaders/硬高光.gdshader" id="1_r2264"]
-[ext_resource type="Shader" uid="uid://ckrhxuhlk1vnp" path="res://shaders/反向外扩描边.gdshader" id="2_umalr"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_umalr"]
-render_priority = 0
-shader = ExtResource("2_umalr")
-shader_parameter/outline_color = Color(0.03137255, 0.03137255, 0.03137255, 1)
-shader_parameter/outline_width = 0.03
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ps45"]
-render_priority = 0
-next_pass = SubResource("ShaderMaterial_umalr")
-shader = ExtResource("1_r2264")
-shader_parameter/n = 32.0
-shader_parameter/e0 = 0.20000000298024
-shader_parameter/e1 = 0.40000000596048
-
 [sub_resource type="SphereMesh" id="SphereMesh_msjai"]
-material = SubResource("ShaderMaterial_3ps45")
 
 [node name="mian" type="Node3D" unique_id=2117637084]
 
@@ -26,9 +8,8 @@ material = SubResource("ShaderMaterial_3ps45")
 mesh = SubResource("SphereMesh_msjai")
 
 [node name="AreaLight3D" type="OmniLight3D" parent="." unique_id=1703366899]
-transform = Transform3D(0.8660254, -0.3535534, -0.3535534, 0.5, 0.61237246, 0.61237246, 0, -0.7071068, 0.7071068, -1, 2.3980436, 2)
-light_color = Color(0.76385975, 0.53303945, 0.88465303, 1)
-light_energy = 1.636
+transform = Transform3D(0.9010244, 0.43273607, -0.029907793, 0.018505894, 0.030536905, 0.99936223, 0.43337336, -0.90100336, 0.019506354, -3.2750602, 2.2385297, 0.7457291)
+light_energy = 5.863
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1348288067]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.4573219)
